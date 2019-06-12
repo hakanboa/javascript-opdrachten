@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oppervlakte2</title>
+</head>
+<body>
+<h1>berekenen</h1>
+<p><input type="text" id="lengte" placeholder=" wat is de lengte?"></p>
+<p><input type="text" id="breede" placeholder=" wat is de breede?"></p>
+
+<p><button onclick="bereken()">ok!</button></p>
+
+<p id="lengte2">voer lengte in</p>
+<p id="breedte2">voer breede in</p>
+<p id="oppervlakte2"> voer oppervlakte in</p>
+
+<script>
+    function bereken(){
+
+    var lengte = document.getElementById("lengte").value;
+    var breede = document.getElementById("breede").value;
+    var oppervlakte = lengte * breede;
+
+         document.getElementById("lengte2").innerHTML = "<p> de lengte is " + lengte + "</p>";
+         document.getElementById("breedte2").innerHTML = "<p> de breede is " + breede + "</p>";
+         document.getElementById("oppervlakte2").innerHTML = "<p> de oppervlakte is " + oppervlakte + "</p>"; }
+
+
+</script>
+</body>
+</html>

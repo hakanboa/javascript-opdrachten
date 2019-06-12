@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="NL">
+<head>
+
+    <title>totaalprijs</title>
+</head>
+<body>
+<h1>berekenen</h1>
+<p><input type="text" id="aantal" placeholder=" wat is de aantal?"></p>
+<p><input type="text" id="prijs" placeholder=" wat is de prijs?"></p>
+
+<p id="aantal2">voer aantal boven in aub</p>
+<p id="prijs2">voer prijs boven in aub</p>
+<p id="yoy"> antwoord: </p>
+<p><button onclick="bereken()">ok!</button></p>
+
+<script>
+    function bereken() {
+        var aantal = document.getElementById("aantal").value;
+        var prijs = document.getElementById("prijs").value;
+        var antwoord = prijs * aantal ;
+
+        document.getElementById("aantal2").innerHTML = "<p> aantal " + aantal + "</p>";
+        document.getElementById("prijs2").innerHTML = "<p> prijs pp  " + prijs + "</p>";
+        document.getElementById("yoy").innerHTML = "<p> totaal prijs " + antwoord + "</p>";
+    }
+
+</script>
+</body>
+
+</html>

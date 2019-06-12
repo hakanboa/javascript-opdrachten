@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>invoer2</title>
+</head>
+<body>
+<h1>invoer</h1>
+<p><input type="text" id="naam" placeholder="typ hier je naam"></p>
+<p><input type="text" id="leeftijd" placeholder="typ hier je leeftijd"></p>
+<p><button onclick="invoeren()">Ok</button></p>
+<script>
+    function invoeren () {
+        var naam = document.getElementById("naam").value;
+        var leeftijd = document.getElementById("leeftijd").value;
+
+        document.write("<p> je naam is : " + naam + "</p>");
+        document.write("<p> en je bent : " + leeftijd + "</p>");
+    }
+
+</script>
+</body>
+</html>

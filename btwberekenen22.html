@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>btwberekening2</title>
+</head>
+<body>
+<h1>btwberkening2</h1>
+<p> <input type="text" id="invaantal" placeholder="aantal"> </p>
+<p> <input type="text" id="invprijs" placeholder="prijs"> </p>
+<p> <input type="text" id="invcode" placeholder="code"> </p>
+
+<p id="uitvoeraantal"></p>
+<p id="uitvoerprijs"></p>
+<p id="uitvoerbtw"></p>
+<p id="uitvoertotaalprijs"></p>
+<p id="uitvoercode"></p>
+<p id="uitvoercode2"></p>
+<button onclick="bereken()">oke</button>
+
+<script>
+ function bereken() {
+
+     var aantal= document.getElementById("invaantal").value;
+     var prijs= document.getElementById("invprijs").value;
+     var code= document.getElementById("invcode").value;
+     var totaalprijs= aantal*prijs;
+
+
+
+     document.getElementById("uitvoeraantal").innerHTML =
+         "aantal is " + aantal;
+     document.getElementById("uitvoerprijs").innerHTML =
+         "prijs is " + prijs;
+     document.getElementById("uitvoertotaalprijs").innerHTML =
+         "totaal bedrag zonder btw is " + totaalprijs;
+     document.getElementById("uitvoercode2").innerHTML=
+         "code is " + code;
+
+     if(code==1){
+         document.getElementById("uitvoerbtw").innerHTML=
+             "btw bedrag is " + totaalprijs*0.00;
+         document.getElementById("uitvoercode").innerHTML=
+             "totaalprijs is " + totaalprijs*1.00;
+
+     }
+     else if(code==2){
+         document.getElementById("uitvoerbtw").innerHTML=
+             "btw bedrag is " + totaalprijs*0.06;
+        document.getElementById("uitvoercode").innerHTML=
+              "totaalprijs is " + totaalprijs*1.06;
+
+     }
+     else {
+         document.getElementById("uitvoerbtw").innerHTML=
+             "btw bedrag is " + totaalprijs*0.21;
+        document.getElementById("uitvoercode").innerHTML=
+            "totaalprijs is " +totaalprijs*1.21;
+
+     }
+
+
+ }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

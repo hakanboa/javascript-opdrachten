@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>selectie3</title>
+</head>
+<body>
+<h1>kortings controle </h1>
+<p><input type="text" id="aantal" placeholder="aantal artikelen ?"></p>
+<p><button onclick="berekenen()">kijk of je korting krijgt</button></p>
+<p id="uitvoer">tik je aantal artikelen in</p>
+<script>
+        function berekenen() {
+        var leeftijd = document.getElementById("aantal").value;
+
+        if (leeftijd < 100)
+        {
+            document.getElementById("uitvoer").innerHTML = "krijg je geen korting"
+        }
+        else {
+            document.getElementById("uitvoer").innerHTML = "je krijgt 10% korting !"
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nix18</title>
+
+</head>
+<body>
+<h1>leeftijd controle </h1>
+<p><input type="text" id="leeftijd" placeholder="wat is je leeftijd"></p>
+<p><button onclick="berekenen()">Ok</button></p>
+<p id="uitvoer">tik je lijftijd in</p>
+<script>
+    function berekenen() {
+        var leeftijd = document.getElementById("leeftijd").value;
+
+        if (leeftijd < 18)
+        {
+            document.getElementById("uitvoer").innerHTML = "je krijgt cola"
+        }
+        else {
+            document.getElementById("uitvoer").innerHTML = "je krijgt bier !! huts"
+        }
+    }
+
+</script>
+</body>
+
+</html>

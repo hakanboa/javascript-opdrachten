@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tellendelus3</title>
+</head>
+<body>
+<h1>tellende lus3</h1>
+<p><input type="text" id="tafel" placeholder="tafel?"> </p>
+<p><button onclick="bereken()">oke</button> </p>
+
+<script>
+
+    function bereken() {
+        var tafel = document.getElementById("tafel").value;
+        var  o=1;
+        for (i=0; i<=tafel*20; i= tafel *o++){
+            document.write("<p>" +i+ "</p>")
+        }
+
+    }
+
+</script>
+</body>
+</html>

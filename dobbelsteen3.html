@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>dobbelsteen3</title>
+</head>
+<body>
+<h1>dobbelsteen</h1>
+<p id="uitvoer">je heb nog niks gegooid</p>
+<p><button onclick="berekenen()">kick om te gooien</button></p>
+<script>
+    function berekenen() {
+        var worp = Math.floor(Math.random() * 6 + 1);
+
+        switch (worp) {
+            case 1 :
+                document.getElementById("uitvoer").innerHTML =
+                "je gooide: een";
+
+                break;
+            case 2 :
+                document.getElementById("uitvoer").innerHTML =
+                    "je gooide: twee";
+                break;
+            case 3 :
+                document.getElementById("uitvoer").innerHTML =
+                    "je gooide: drie";
+                break;
+            case 4 :
+                document.getElementById("uitvoer").innerHTML =
+                    "je gooide: vier";
+                break;
+            case 5 :
+                document.getElementById("uitvoer").innerHTML =
+                    "je gooide: vijf";
+                break;
+            case 6 :
+                document.getElementById("uitvoer").innerHTML =
+                    "je gooide: zes";
+                break;
+        }
+    }
+</script>
+
+</body>
+</html>
